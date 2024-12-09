@@ -11,7 +11,7 @@
       <h1>4 Colores</h1>
 
       <div
-        id="azul"
+        id="box1"
         style="
           width: 200px;
           height: 200px;
@@ -20,7 +20,7 @@
         "
       ></div>
       <div
-        id="rojo"
+        id="box2"
         style="
           width: 200px;
           height: 200px;
@@ -29,7 +29,7 @@
         "
       ></div>
       <div
-        id="verde"
+        id="box3"
         style="
           width: 200px;
           height: 200px;
@@ -38,7 +38,7 @@
         "
       ></div>
       <div
-        id="amarillo"
+        id="box4"
         style="
           width: 200px;
           height: 200px;
@@ -49,15 +49,7 @@
       <button onclick="location.href='index.html'">Volver</button>
     </div>
 
-    <script>
-      const divs = ["azul", "rojo", "verde", "amarillo"];
-
-      divs.forEach((id) => {
-        const div = document.getElementById(id);
-        div.addEventListener("click", () => {
-          div.style.backgroundColor = "black";
-        });
-      });
-    </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/4_colores.js"></script>
   </body>
 </html>

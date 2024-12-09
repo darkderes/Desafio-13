@@ -28,14 +28,11 @@
         const keyDiv = document.getElementById("key");
 
         if (event.key === "a") {
-          color = "pink";
-          keyDiv.style.backgroundColor = color;
+          pintar(keyDiv, "pink");
         } else if (event.key === "s") {
-          color = "orange";
-          keyDiv.style.backgroundColor = color;
+          pintar(keyDiv, "orange");
         } else if (event.key === "d") {
-          color = "skyblue";
-          keyDiv.style.backgroundColor = color;
+          pintar(keyDiv, "skyblue");
         }
       });
 
@@ -48,18 +45,21 @@
             createdDiv.style.width = "200px";
             createdDiv.style.height = "200px";
             createdDiv.style.border = "2px solid black";
-            document.body.appendChild(createdDiv);
+            document
+              .getElementById("key")
+              .insertAdjacentElement("afterend", createdDiv);
           }
 
           if (event.key === "q") {
-            createdDiv.style.backgroundColor = "purple";
+            pintar(createdDiv, "purple");
           } else if (event.key === "w") {
-            createdDiv.style.backgroundColor = "gray";
+            pintar(createdDiv, "gray");
           } else if (event.key === "e") {
-            createdDiv.style.backgroundColor = "brown";
+            pintar(createdDiv, "brown");
           }
         }
       });
     </script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
