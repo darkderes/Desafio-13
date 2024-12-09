@@ -42,3 +42,15 @@ button:hover {
   color: black;
   border: 2px solid #4caf50;
 }
+
+/* parte de pagina pintar */
+
+#ele1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  height: 100px; /* Ajusta la altura según sea necesario */
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  text-align: center;
+}
