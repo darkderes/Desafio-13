@@ -54,3 +54,11 @@ button:hover {
   width: 100%; /* Ajusta el ancho según sea necesario */
   text-align: center;
 }
+
+/* parte pagina 4_colores.html */
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
