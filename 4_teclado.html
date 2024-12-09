@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 Teclados</title>
+  </head>
+  <body>
+    <div
+      id="key"
+      style="
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 2px solid black;
+      "
+    ></div>
+    <script>
+      let color;
+
+      document.addEventListener("keydown", function (event) {
+        const keyDiv = document.getElementById("key");
+
+        if (event.key === "a") {
+          color = "pink";
+          keyDiv.style.backgroundColor = color;
+        } else if (event.key === "s") {
+          color = "orange";
+          keyDiv.style.backgroundColor = color;
+        } else if (event.key === "d") {
+          color = "skyblue";
+          keyDiv.style.backgroundColor = color;
+        }
+      });
+
+      let createdDiv = null;
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "q" || event.key === "w" || event.key === "e") {
+          if (!createdDiv) {
+            createdDiv = document.createElement("div");
+            createdDiv.style.width = "200px";
+            createdDiv.style.height = "200px";
+            createdDiv.style.border = "2px solid black";
+            document.body.appendChild(createdDiv);
+          }
+
+          if (event.key === "q") {
+            createdDiv.style.backgroundColor = "purple";
+          } else if (event.key === "w") {
+            createdDiv.style.backgroundColor = "gray";
+          } else if (event.key === "e") {
+            createdDiv.style.backgroundColor = "brown";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
